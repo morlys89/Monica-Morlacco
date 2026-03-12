@@ -1,0 +1,392 @@
+/* =============================================
+   Monica Morlacco — Academic Website
+   ============================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+
+:root {
+    --bg:          #FAFAFA;
+    --header-bg:   #F7F3F5;
+    --nav-bg:      #7B1040;
+    --nav-text:    #F9F0F3;
+    --nav-hover:   #F2C4D4;
+    --text:        #1A1A1A;
+    --text-light:  #5A5A5A;
+    --accent:      #7B1040;
+    --border:      #E2D4D9;
+    --font-serif:  'Cormorant Garamond', Georgia, serif;
+    --font-body:   'Lora', Georgia, serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* =============================================
+   HEADER
+   ============================================= */
+
+header {
+    background-color: var(--header-bg);
+    text-align: center;
+    padding: 4rem 2rem 3.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+    font-family: var(--font-body);
+    font-size: 3.2rem;
+    font-weight: 400;
+    color: var(--accent);
+    letter-spacing: 0.04em;
+}
+
+/* =============================================
+   NAVIGATION
+   ============================================= */
+
+nav {
+    background-color: var(--nav-bg);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1rem 2.8rem;
+    color: var(--nav-text);
+    font-family: var(--font-body);
+    font-size: 1.15rem;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: var(--nav-hover);
+    text-decoration: none;
+}
+
+/* =============================================
+   MAIN CONTENT
+   ============================================= */
+
+main {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 3.5rem 2rem 5rem;
+}
+
+/* =============================================
+   HOME PAGE
+   ============================================= */
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    gap: 3.5rem;
+    align-items: start;
+}
+
+.home-photo {
+    margin-bottom: 2.8rem;
+}
+
+.home-photo img {
+    width: 100%;
+    display: block;
+}
+
+.photo-links {
+    margin-top: 0.6rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.home-bio p {
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+}
+
+.contact-block {
+    margin-top: 4rem;
+    font-size: 0.95rem;
+    color: var(--text-light);
+    line-height: 2;
+}
+
+.contact-block a {
+    color: var(--accent);
+}
+
+/* =============================================
+   SECTION TITLES
+   ============================================= */
+
+.section-title {
+    font-family: var(--font-body);
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.4rem;
+    margin-top: 3rem;
+    margin-bottom: 1.8rem;
+}
+
+/* =============================================
+   DROPDOWNS
+   ============================================= */
+
+details {
+    margin-top: 3rem;
+}
+
+details + details {
+    margin-top: 0;
+}
+
+details summary.section-title {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+    user-select: none;
+}
+
+details summary.section-title::after {
+    content: '▸';
+    font-size: 0.85em;
+    color: var(--accent);
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+}
+
+details[open] summary.section-title::after {
+    transform: rotate(90deg);
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+.section-papers {
+    padding-top: 1.2rem;
+}
+
+/* =============================================
+   RESEARCH / PAPERS
+   ============================================= */
+
+.paper {
+    margin-bottom: 2rem;
+}
+
+.paper-title {
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.5;
+}
+
+.paper-dtitle {
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: var(--text);
+    line-height: 1.5;
+}
+
+.paper-title a {
+    color: #a10543;
+    text-decoration: none;
+}
+
+.paper-title a:hover {
+    text-decoration: underline;
+}
+
+.paper-links {
+    margin-top: 0.4rem;
+    font-size: 0.75rem;
+    display: flex;
+    gap: 1.2rem;
+}
+
+.paper-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1px;
+}
+
+.paper-links a:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+    text-decoration: none;
+}
+
+.paper-details {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-top: 0.2rem;
+}
+
+.paper-journal {
+    font-weight: 700;
+    color: var(--text);
+}
+
+.disc-sep {
+    color: var(--border);
+    font-weight: 400;
+}
+
+.paper-status {
+    font-style: italic;
+    color: var(--accent);
+}
+
+
+.paper-authors {
+    font-weight: 500;
+    color: #555;
+    font-size: 0.85em;
+}
+
+
+/* =============================================
+   CV PAGE
+   ============================================= */
+
+.cv-download {
+    display: inline-block;
+    margin-bottom: 2.5rem;
+    padding: 0.65rem 1.8rem;
+    background-color: var(--nav-bg);
+    color: var(--nav-text);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    letter-spacing: 0.06em;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.cv-download:hover {
+    background-color: #5A0C2F;
+    text-decoration: none;
+    color: var(--nav-text);
+}
+
+.cv-section {
+    margin-bottom: 2rem;
+}
+
+.cv-row {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.97rem;
+}
+
+.cv-year {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    padding-top: 0.05rem;
+}
+
+/* =============================================
+   TEACHING PAGE
+   ============================================= */
+
+.course {
+    margin-bottom: 2rem;
+}
+
+.course-title {
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.course-details {
+    font-size: 0.95rem;
+    color: var(--text-light);
+}
+
+/* =============================================
+   FOOTER
+   ============================================= */
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    border-top: 1px solid var(--border);
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+
+@media (max-width: 680px) {
+    header h1 {
+        font-size: 2.6rem;
+    }
+
+    nav ul li a {
+        padding: 0.85rem 1.2rem;
+        font-size: 1rem;
+    }
+
+    .home-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-photo img {
+        max-width: 180px;
+        margin: 0 auto;
+    }
+
+    .cv-row {
+        grid-template-columns: 90px 1fr;
+    }
+}
