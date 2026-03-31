@@ -110,7 +110,7 @@ nav ul li a.active {
 main {
     max-width: 880px;
     margin: 0 auto;
-    padding: 3.5rem 2rem 5rem;
+    padding: 3rem 2rem;
 }
 
 /* =============================================
@@ -120,7 +120,7 @@ main {
 .home-grid {
     display: grid;
     grid-template-columns: 210px 1fr;
-    gap: 3.5rem;
+    gap: 4.5rem;
     align-items: start;
 }
 
@@ -131,12 +131,21 @@ main {
 .home-photo img {
     width: 100%;
     display: block;
+    border: 1px solid var(--border);
 }
 
-.photo-links {
-    margin-top: 0.6rem;
-    text-align: center;
-    font-size: 0.9rem;
+.home-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+.home-links a {
+    display: block;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid var(--border);
 }
 
 .home-bio p {
@@ -148,27 +157,30 @@ main {
     font-size: 1.08rem;
 }
 
-.home-highlights {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    margin: 1.5rem 0;
+.home-section {
+    margin-top: 2.5rem;
 }
 
-.home-highlights a {
-    display: inline-block;
-    padding: 0.35rem 0.8rem;
-    border: 1px solid var(--border);
-    background-color: var(--header-bg);
+.home-section h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.55rem;
 }
 
-.home-highlights a:hover {
-    text-decoration: none;
-    border-color: var(--accent);
+.home-list {
+    list-style: none;
+    padding: 0;
+}
+
+.home-list li + li {
+    margin-top: 0.35rem;
 }
 
 .contact-block {
-    margin-top: 4rem;
+    margin-top: 2rem;
     font-size: 0.95rem;
     color: var(--text-light);
     line-height: 2;
@@ -176,6 +188,39 @@ main {
 
 .contact-block a {
     color: var(--accent);
+}
+
+@media (max-width: 720px) {
+    header {
+        padding: 3rem 1.5rem 2.5rem;
+    }
+
+    header h1 {
+        font-size: 2.4rem;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav ul li a {
+        padding: 0.9rem 1.2rem;
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 3rem 2rem 4.5rem 1.5rem;
+    }
+
+    .home-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .home-photo {
+        max-width: 220px;
+        margin-bottom: 0;
+    }
 }
 
 /* =============================================
