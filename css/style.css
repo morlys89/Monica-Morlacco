@@ -131,7 +131,6 @@ main {
 .home-photo img {
     width: 100%;
     display: block;
-    border: 1px solid var(--border);
 }
 
 .home-links {
