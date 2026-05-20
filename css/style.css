@@ -245,7 +245,7 @@ body {
 .about a:hover { opacity: 0.7; }
 
 /* Section headings */
-.section { margin-top: 3.5rem; }
+.section { margin-top: 3.5rem; scroll-margin-top: 5rem; }
 .section h2 {
   font-size: 1.4rem;
   font-weight: 600;
