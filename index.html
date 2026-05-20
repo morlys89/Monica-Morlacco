@@ -39,65 +39,182 @@
 </head>
 <body>
 
-<header>
-    <h1>Monica Morlacco</h1>
-    <p class="site-subtitle">Assistant Professor of Economics, University of Southern California</p>
-</header>
+<div class="top-bar"></div>
 
-<nav>
-    <ul>
-        <li><a href="/" class="active">Home</a></li>
-        <li><a href="/research.html">Research</a></li>
-        <li><a href="/cv.html">CV</a></li>
-        <li><a href="/discussions.html">Discussions</a></li>
-       <!--
-       <li><a href="/teaching.html">Teaching</a></li> 
-       --> 
-    </ul>
+<nav class="top-nav">
+    <a href="/" class="active">Home</a>
+    <a href="/cv.html">CV</a>
+    <a href="/discussions.html">Discussions</a>
 </nav>
 
-<main>
-    <div class="home-grid">
+<div class="layout">
 
-        <div class="home-photo">
-            <img src="assets/portrait.png" alt="Monica Morlacco">
-            <div class="home-links">
-                <a href="https://scholar.google.com/citations?user=z0kVFdkAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-                <a href="/cv.html">CV</a>
+    <aside class="sidebar">
+        <div class="sidebar-photo"><img src="assets/portrait.png" alt="Monica Morlacco"></div>
+        <div class="sidebar-name">Monica Morlacco</div>
+        <div class="sidebar-affiliation">University of Southern California</div>
+
+        <div class="sidebar-contact">
+            <div class="contact-label">Contact</div>
+            <div class="contact-address">
+                <div>USC Department of Economics</div>
+                <div>3620 South Vermont Avenue,</div>
+                <div>Kaprielian Hall, Room 324D</div>
+                <div>Los Angeles, CA 90089&ndash;0253, USA</div>
             </div>
         </div>
 
-        <div class="home-bio">
-            <p class="home-lead">
-                Welcome! I am an Assistant Professor of Economics at the
-                <a href="https://dornsife.usc.edu/economics/">University of Southern California</a>
-                and a CESifo Research Affiliate.
-            </p>
-            <p>
-                My primary research interests are in international economics and macroeconomics,
-                with a particular focus on market structure, market power, firm-to-firm trade,
-                and development.
-            </p>
+        <div class="sidebar-copy">&copy; 2026</div>
 
-            <div class="home-section">
-                <h2>Research Fields</h2>
-                <p>International Economics, Macroeconomics</p>
-            </div>
-
-            <div class="home-section contact-block">
-                <h2>Contact</h2>
-                <div>Department of Economics, University of Southern California</div>
-                <div>3620 S Vermont Ave, Los Angeles, CA 90089</div>
-                <div>Email: <a href="mailto:morlacco@usc.edu">morlacco@usc.edu</a></div>
-            </div>
+        <div class="dark-toggle">
+            <span>Dark Mode</span>
+            <label class="switch" aria-label="Toggle dark mode">
+                <input type="checkbox" class="dark-toggle-input" onchange="toggleDark(this)">
+                <span class="slider"></span>
+            </label>
         </div>
+    </aside>
 
-    </div>
-</main>
+    <main class="content">
 
-<footer>
-    &copy; 2026 Monica Morlacco &nbsp;&middot;&nbsp; Last updated: March 2026
-</footer>
+        <section class="about">
+            <h1>About Me</h1>
+            <p>I am an <strong>Assistant Professor of Economics</strong> at the <a href="https://dornsife.usc.edu/economics/">University of Southern California</a> and a <strong>CESifo Research Affiliate</strong>.</p>
+            <p>My primary research interests are in <strong>international economics</strong> and <strong>macroeconomics</strong>, with a particular focus on market structure, market power, firm-to-firm trade, and development.</p>
+            <p class="about-email">Email: <a href="mailto:morlacco@usc.edu">morlacco@usc.edu</a></p>
+            <p class="about-cv">My CV is available <a href="/cv.html">here</a>.</p>
+        </section>
 
+        <!-- PUBLICATIONS -->
+        <section class="section">
+            <h2>Publications</h2>
+
+            <div class="paper">
+                <div class="paper-title">
+                    <a href="https://www.aeaweb.org/articles?id=10.1257/aer.20230490" target="_blank" rel="noopener noreferrer">&ldquo;Labor Market Power, Self-Employment, and Development&rdquo;</a><span class="coauthors">, with Francesco Amodio and Pamela Medina</span>
+                </div>
+                <div class="paper-meta"><em>American Economic Review</em>, 2025, 115(9): 3014&ndash;57.</div>
+                <div class="paper-links">
+                    <a href="https://www.dropbox.com/scl/fi/ssog22t00silq2gifz6p3/amm_editorial.pdf?rlkey=wl6d53hbw65imjqwatrutzz7v&raw=1" target="_blank" rel="noopener noreferrer">Final Draft</a> <span class="sep">/</span>
+                    <a href="https://www.openicpsr.org/openicpsr/project/219907/version/V1/view" target="_blank" rel="noopener noreferrer">Replication Material</a> <span class="sep">/</span>
+                    <a href="https://voxdev.org/topic/firms/how-wage-setting-power-firms-shapes-perus-economy" target="_blank" rel="noopener noreferrer">Vox Dev</a>
+                </div>
+            </div>
+
+            <div class="paper">
+                <div class="paper-title">
+                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S0022199625001254?dgcid=author" target="_blank" rel="noopener noreferrer">&ldquo;Liquidity as Competitive Advantage: The Role of Intangibles&rdquo;</a><span class="coauthors">, with Carlo Altomonte, Tommaso Sonno, and Domenico Favoino</span>
+                </div>
+                <div class="paper-meta"><em>Journal of International Economics</em>, 2025, 158: 140168.</div>
+                <div class="paper-links">
+                    <a href="https://www.dropbox.com/scl/fi/vj2jog30ieb1pw1w4rrgj/amsf_draft_final.pdf?rlkey=y98skmtkenb916fttmcxts9ty&raw=1" target="_blank" rel="noopener noreferrer">Final Draft</a> <span class="sep">/</span>
+                    <a href="https://data.mendeley.com/datasets/bkcp8h8gx2/1" target="_blank" rel="noopener noreferrer">Replication Material</a>
+                </div>
+            </div>
+
+            <div class="paper">
+                <div class="paper-title">
+                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S0304393221000489" target="_blank" rel="noopener noreferrer">&ldquo;Monetary Policy, Customer Capital, and Market Power&rdquo;</a><span class="coauthors">, with David Zeke</span>
+                </div>
+                <div class="paper-meta"><em>Journal of Monetary Economics</em>, 2021, 121: 116&ndash;134.</div>
+                <div class="paper-links">
+                    <a href="https://www.dropbox.com/scl/fi/0erby95xn87bxoxxmjyve/MPCCMP_JMESUBMISSION.pdf?rlkey=vaty98ygf5soyecn665kx8t8d&raw=1" target="_blank" rel="noopener noreferrer">Final Draft</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- WORKING PAPERS -->
+        <section class="section">
+            <h2>Working Papers</h2>
+
+            <div class="paper">
+                <div class="paper-title">
+                    <a href="https://www.dropbox.com/scl/fi/whk9awjs6bek5ufr9p3a1/tsmp_draft_vrr2.pdf?rlkey=u46ekjl684oq7mn9h2ozc0z3e&raw=1" target="_blank" rel="noopener noreferrer">&ldquo;Two-Sided Market Power in Firm-to-Firm Trade&rdquo;</a><span class="coauthors">, with Vanessa Alviarez, Michele Fioretti, and Ken Kikkawa &middot; 2026</span>
+                </div>
+                <div class="paper-meta">
+                    <span class="paper-status">R&amp;R, <em>American Economic Review</em> (2nd round)</span>
+                </div>
+                <div class="paper-links">
+                    <a href="https://www.nber.org/papers/w31253" target="_blank" rel="noopener noreferrer">NBER Working Paper</a> <span class="sep">/</span>
+                    <a href="https://www.promarket.org/2025/10/24/market-power-shifts-tariff-costs-to-suppliers/" target="_blank" rel="noopener noreferrer">ProMarket</a>
+                </div>
+            </div>
+
+            <div class="paper">
+                <div class="paper-title">
+                    <a href="https://www.dropbox.com/scl/fi/sj85h55uu3j4amtvpkl5l/hhi_trade_draft.pdf?rlkey=kgux3niqgzd89uayatxb7k54a&raw=1" target="_blank" rel="noopener noreferrer">&ldquo;Concentration and Markups in International Trade&rdquo;</a><span class="coauthors">, with Vanessa Alviarez, Michele Fioretti, and Ken Kikkawa &middot; 2025</span>
+                </div>
+                <div class="paper-links">
+                    <a href="https://www.suerf.org/publications/suerf-policy-notes-and-briefs/navigating-global-supply-chains-why-market-concentration-in-input-trade-matters-for-markups/" target="_blank" rel="noopener noreferrer">SUERF Brief</a>
+                </div>
+            </div>
+
+            <div class="paper">
+                <div class="paper-title">
+                    <a href="https://www.dropbox.com/scl/fi/n2m83dj07eb5xgaxdgd1v/BP_draft_01102020.pdf?rlkey=waw8c3f8wlwtk6nilvm8t2avu&raw=1" target="_blank" rel="noopener noreferrer">&ldquo;Market Power in Input Markets: Theory and Evidence from French Manufacturing&rdquo;</a><span class="coauthors">, with Etienne Guigue</span>
+                </div>
+                <div class="paper-meta"><span class="paper-status">New version in progress</span></div>
+                <div class="paper-links">
+                    <a href="https://www.dropbox.com/scl/fi/n2m83dj07eb5xgaxdgd1v/BP_draft_01102020.pdf?rlkey=waw8c3f8wlwtk6nilvm8t2avu&raw=1" target="_blank" rel="noopener noreferrer">Latest Draft (2020)</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- OTHER PUBLICATIONS -->
+        <section class="section">
+            <h2>Other Publications</h2>
+
+            <div class="paper">
+                <div class="paper-title">
+                    <a href="https://doi.org/10.4337/9781035327508.00041" target="_blank" rel="noopener noreferrer">&ldquo;The Eaton&ndash;Kortum Model&rdquo;</a><span class="coauthors">, with Robert Dekle</span>
+                </div>
+                <div class="paper-meta">In <em>Elgar Encyclopedia of International Trade</em>, edited by Priyaranjan Jha and Devashish Mitra, Edward Elgar Publishing, 2026.</div>
+            </div>
+        </section>
+
+        <!-- WORK IN PROGRESS -->
+        <section class="section">
+            <h2>Selected Work in Progress</h2>
+
+            <div class="paper">
+                <div class="paper-title">
+                    <span class="paper-title-text">&ldquo;Improving the Measurement of Productivity Dispersion and Misallocation in Developing Countries&rdquo;</span><span class="coauthors">, with Vittorio Bassi, Julian Duggan, Tommaso Porzio, and Esau Tugume</span>
+                </div>
+            </div>
+
+            <div class="paper">
+                <div class="paper-title">
+                    <span class="paper-title-text">&ldquo;Market Boundaries in Buyer-Supplier Networks&rdquo;</span><span class="coauthors">, with Vanessa Alviarez, Michele Fioretti, and Ken Kikkawa</span>
+                </div>
+            </div>
+
+            <div class="paper">
+                <div class="paper-title">
+                    <span class="paper-title-text">&ldquo;Variable Demand Elasticity, Markups, and Pass-Through&rdquo;</span><span class="coauthors">, with Costas Arkolakis</span>
+                </div>
+                <div class="paper-links">
+                    <a href="https://www.dropbox.com/scl/fi/9tb7kgwzkcyhcxzzi76xq/Arkolakis_Morlacco_08_2017.pdf?rlkey=79r1gd99sbg6riv1u0bfa4wcx&raw=1" target="_blank" rel="noopener noreferrer">Earlier Version (2017)</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<script>
+function toggleDark(input) {
+    document.body.classList.toggle('dark', input.checked);
+    try { localStorage.setItem('mm-dark', input.checked ? '1' : '0'); } catch (e) {}
+}
+(function () {
+    try {
+        if (localStorage.getItem('mm-dark') === '1') {
+            document.body.classList.add('dark');
+            var el = document.querySelector('.dark-toggle-input');
+            if (el) el.checked = true;
+        }
+    } catch (e) {}
+})();
+</script>
 </body>
 </html>

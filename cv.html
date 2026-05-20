@@ -16,101 +16,103 @@
 </head>
 <body>
 
-<header>
-    <h1>Monica Morlacco</h1>
-</header>
+<div class="top-bar"></div>
 
-<nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/research.html">Research</a></li>
-        <li><a href="/cv.html" class="active">CV</a></li>
-        <li><a href="/discussions.html">Discussions</a></li>
-        <!-- <li><a href="/teaching.html">Teaching</a></li> -->
-    </ul>
+<nav class="top-nav">
+    <a href="/">Home</a>
+    <a href="/cv.html" class="active">CV</a>
+    <a href="/discussions.html">Discussions</a>
 </nav>
 
-<main>
+<div class="layout">
 
-    <a class="cv-download" href="https://www.dropbox.com/scl/fi/zhrereixdb2iq664phuzo/CV_MorlaccoM.pdf?rlkey=6p9ch13m0h8goqgzv0uj8cj8p&raw=1" target="_blank" rel="noopener noreferrer">Download CV (PDF)</a>
-    <!-- POSITIONS -->
-    <h2 class="section-title">Academic Positions</h2>
+    <aside class="sidebar">
+        <div class="sidebar-photo"><img src="assets/portrait.png" alt="Monica Morlacco"></div>
+        <div class="sidebar-name">Monica Morlacco</div>
+        <div class="sidebar-affiliation">University of Southern California</div>
+        <div class="sidebar-copy">&copy; 2026</div>
 
-    <div class="cv-section">
-        <div class="cv-row">
-            <span class="cv-year">2019–</span>
-            <span>Assistant Professor of Economics, University of Southern California</span>
+        <div class="dark-toggle">
+            <span>Dark Mode</span>
+            <label class="switch" aria-label="Toggle dark mode">
+                <input type="checkbox" class="dark-toggle-input" onchange="toggleDark(this)">
+                <span class="slider"></span>
+            </label>
         </div>
-        <div class="cv-row">
-            <span class="cv-year">2018–2019</span>
-            <span>FIND Postdoctoral Fellow, Aarhus University</span>
+    </aside>
+
+    <main class="content">
+
+        <section class="about">
+            <h1>Curriculum Vitae</h1>
+        </section>
+
+        <div class="cv-buttons">
+            <a class="cv-button" href="https://www.dropbox.com/scl/fi/zhrereixdb2iq664phuzo/CV_MorlaccoM.pdf?rlkey=6p9ch13m0h8goqgzv0uj8cj8p&raw=1" target="_blank" rel="noopener noreferrer">Download CV (PDF)</a>
+            <a class="cv-button" href="https://scholar.google.com/citations?user=z0kVFdkAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
         </div>
-    </div>
 
-    <h2 class="section-title">Affiliations</h2>
+        <section class="section" style="margin-top: 0;">
+            <h2>Academic Positions</h2>
+            <div class="cv-section">
+                <div class="cv-row"><span class="cv-year">2019&ndash;</span><span>Assistant Professor of Economics, University of Southern California</span></div>
+                <div class="cv-row"><span class="cv-year">2018&ndash;2019</span><span>FIND Postdoctoral Fellow, Aarhus University</span></div>
+            </div>
+        </section>
 
-    <div class="cv-section">
-        <div class="cv-row">
-            <span class="cv-year">2025–</span>
-            <span>Affiliate, CESifo Research Network</span>
-        </div>
-    </div>
+        <section class="section">
+            <h2>Affiliations</h2>
+            <div class="cv-section">
+                <div class="cv-row"><span class="cv-year">2025&ndash;</span><span>Affiliate, CESifo Research Network</span></div>
+            </div>
+        </section>
 
-    <!-- EDUCATION -->
-    <h2 class="section-title">Education</h2>
+        <section class="section">
+            <h2>Education</h2>
+            <div class="cv-section">
+                <div class="cv-row"><span class="cv-year">2018</span><span>Ph.D. in Economics, Yale University</span></div>
+                <div class="cv-row"><span class="cv-year">2014</span><span>M.Sc. in Economics and Social Sciences, Bocconi University <em>(Summa cum Laude)</em></span></div>
+                <div class="cv-row"><span class="cv-year">2011</span><span>B.A. in Economics and Social Sciences, Bocconi University <em>(Summa cum Laude)</em></span></div>
+            </div>
+        </section>
 
-    <div class="cv-section">
-        <div class="cv-row">
-            <span class="cv-year">2018</span>
-            <span>Ph.D. in Economics, Yale University</span>
-        </div>
-        <div class="cv-row">
-            <span class="cv-year">2014</span>
-            <span>M.Sc. in Economics and Social Sciences, Bocconi University <em>(Summa cum Laude)</em></span>
-        </div>
-        <div class="cv-row">
-            <span class="cv-year">2011</span>
-            <span>B.A. in Economics and Social Sciences, Bocconi University <em>(Summa cum Laude)</em></span>
-        </div>
-    </div>
+        <section class="section">
+            <h2>Research Grants</h2>
+            <div class="cv-section">
+                <div class="cv-row"><span class="cv-year">2022</span><span>STEG Large Research Grant, &pound;99,771. &ldquo;Understanding the Role of Informal Firms Clusters for Productivity and Growth.&rdquo; Co-PI with Vittorio Bassi, Tommaso Porzio, and Esau Tugume.</span></div>
+                <div class="cv-row"><span class="cv-year">2022</span><span>IGC Grant, &pound;49,836. &ldquo;Misallocation or Mis-measurement? Collecting New Panel Data to Improve Production Function Estimation.&rdquo; Co-PI with Vittorio Bassi, Tommaso Porzio, and Esau Tugume.</span></div>
+                <div class="cv-row"><span class="cv-year">2020&ndash;2021</span><span>Banque de France Research Grant, EUR 30,000. &ldquo;Currency Invoicing and International Trade.&rdquo; Co-PI with Cl&eacute;mence Lenoir.</span></div>
+                <div class="cv-row"><span class="cv-year">2019&ndash;2020</span><span>PEDL Exploratory Research Grant, &pound;34,000. &ldquo;Labor Market Power in Developing Countries.&rdquo; Co-PI with Francesco Amodio and Pamela Medina.</span></div>
+            </div>
+        </section>
 
-    <!-- GRANTS -->
-    <h2 class="section-title">Research Grants</h2>
+        <section class="section">
+            <h2>Fellowships, Awards, and Honors</h2>
+            <div class="cv-section">
+                <div class="cv-row"><span class="cv-year">2017&ndash;2018</span><span>MacMillan International Dissertation Research Fellowship, Yale University</span></div>
+                <div class="cv-row"><span class="cv-year">2016&ndash;2017</span><span>Besen and Dublirer Families Endowed Fellowship, Yale University</span></div>
+                <div class="cv-row"><span class="cv-year">2015&ndash;2016</span><span>Carl Arvid Anderson Prize Fellowship, Yale University</span></div>
+                <div class="cv-row"><span class="cv-year">2013&ndash;2018</span><span>Graduate Fellowship, Yale University</span></div>
+            </div>
+        </section>
 
-    <div class="cv-section">
-        <div class="cv-row">
-            <span class="cv-year">2022</span>
-            <span>STEG Large Research Grant, £99,771. "Understanding the Role of Informal Firms Clusters for Productivity and Growth." Co-PI with Vittorio Bassi, Tommaso Porzio, and Esau Tugume.</span>
-        </div>
-        <div class="cv-row">
-            <span class="cv-year">2022</span>
-            <span>IGC Grant, £49,836. "Misallocation or Mis-measurement? Collecting New Panel Data to Improve Production Function Estimation." Co-PI with Vittorio Bassi, Tommaso Porzio, and Esau Tugume.</span>
-        </div>
-        <div class="cv-row">
-            <span class="cv-year">2020–2021</span>
-            <span>Banque de France Research Grant, EUR 30,000. "Currency Invoicing and International Trade." Co-PI with Clémence Lenoir.</span>
-        </div>
-        <div class="cv-row">
-            <span class="cv-year">2019–2020</span>
-            <span>PEDL Exploratory Research Grant, £34,000. "Labor Market Power in Developing Countries." Co-PI with Francesco Amodio and Pamela Medina.</span>
-        </div>
-    </div>
+    </main>
+</div>
 
-    <!-- HONORS -->
-    <h2 class="section-title">Fellowships, Awards, and Honors</h2>
-
-    <div class="cv-section">
-        <div class="cv-row"><span class="cv-year">2017–2018</span><span>MacMillan International Dissertation Research Fellowship, Yale University</span></div>
-        <div class="cv-row"><span class="cv-year">2016–2017</span><span>Besen and Dublirer Families Endowed Fellowship, Yale University</span></div>
-        <div class="cv-row"><span class="cv-year">2015–2016</span><span>Carl Arvid Anderson Prize Fellowship, Yale University</span></div>
-        <div class="cv-row"><span class="cv-year">2013–2018</span><span>Graduate Fellowship, Yale University</span></div>
-    </div>
-
-</main>
-
-<footer>
-    &copy; 2026 Monica Morlacco &nbsp;&middot;&nbsp; Last updated: March 2026
-</footer>
-
+<script>
+function toggleDark(input) {
+    document.body.classList.toggle('dark', input.checked);
+    try { localStorage.setItem('mm-dark', input.checked ? '1' : '0'); } catch (e) {}
+}
+(function () {
+    try {
+        if (localStorage.getItem('mm-dark') === '1') {
+            document.body.classList.add('dark');
+            var el = document.querySelector('.dark-toggle-input');
+            if (el) el.checked = true;
+        }
+    } catch (e) {}
+})();
+</script>
 </body>
 </html>
