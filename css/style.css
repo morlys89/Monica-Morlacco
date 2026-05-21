@@ -168,6 +168,11 @@ body {
   line-height: 1.65;
 }
 
+.sidebar-contact a {
+    color: #c2185b;
+    text-decoration: none;
+}
+
 /* =====================================================
    CV page
    ===================================================== */
@@ -243,6 +248,7 @@ body {
   transition: opacity 0.15s ease;
 }
 .about a:hover { opacity: 0.7; }
+
 
 /* Section headings */
 .section { margin-top: 3.5rem; scroll-margin-top: 5rem; }
