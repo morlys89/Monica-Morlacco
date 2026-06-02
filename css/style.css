@@ -296,7 +296,7 @@ body.dark .paper-title-text { color: #fafafa; }
 .paper-meta em {
   font-style: italic;
   font-weight: 700;
-  color: #6b7280;
+  color: #9c1450;
 }
 .paper-status {
   font-style: italic;
@@ -378,7 +378,7 @@ body.dark .paper-title a { color: #fafafa; }
 body.dark .paper-title a:hover { border-bottom-color: #c44d7a; }
 body.dark .paper-title .coauthors { color: #9ca3af; }
 body.dark .paper-meta { color: #9ca3af; }
-body.dark .paper-meta em { color: #d1d5db; }
+body.dark .paper-meta em { color: #e0719f; }
 body.dark .paper-status { color: #9ca3af; }
 body.dark .paper-links { color: #6b7280; }
 body.dark .paper-links a { color: #6b7280; }
