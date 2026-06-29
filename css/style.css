@@ -267,10 +267,11 @@ body {
 .paper:last-child { margin-bottom: 0; }
 
 .paper-title {
-  font-size: 0.94rem;
+  font-size: 0.9rem;        /* was 0.94rem */
   line-height: 1.5;
-  color: #1a1a1a;
+  color: #7b1040;           /* was #1a1a1a — deep burgundy */
 }
+
 .paper-title a {
   color: inherit;
   text-decoration: none;
@@ -284,7 +285,7 @@ body.dark .paper-title-text { color: #fafafa; }
 .paper-title .coauthors {
   font-weight: 400;
   color: #6b7280;
-  font-size: 0.88rem;
+  font-size: 0.83rem;       /* was 0.88rem */
 }
 
 .paper-meta {
@@ -296,7 +297,7 @@ body.dark .paper-title-text { color: #fafafa; }
 .paper-meta em {
   /*font-style: italic;*/
   font-weight: 700;
-  color: #6b7280;
+  color: #374151;           /* was #6b7280 */
 }
 .paper-status {
   font-style: italic;
