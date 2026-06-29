@@ -3,7 +3,7 @@
    ===================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@1,500;1,700&display=swap');
 /* =====================================================
    Reset + base
    ===================================================== */
@@ -285,19 +285,20 @@ body.dark .paper-title-text { color: #fafafa; }
 .paper-title .coauthors {
   font-weight: 400;
   color: #6b7280;
-  font-size: 0.83rem;       /* was 0.88rem */
+  font-size: 0.85rem;       /* was 0.88rem */
 }
 
 .paper-meta {
   margin-top: 0.3rem;
-  font-size: 0.92rem;
+  font-size: 0.83rem;
   color: #4b5563;
   line-height: 1.55;
 }
 .paper-meta em {
-  /*font-style: italic;*/
+  font-family: 'Lora', Georgia, serif;
+  font-style: italic;       /* now actually italic */
   font-weight: 700;
-  color: #374151;           /* was #6b7280 */
+  color: #374151;
 }
 .paper-status {
   font-style: italic;
