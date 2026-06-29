@@ -295,8 +295,7 @@ body.dark .paper-title-text { color: #fafafa; }
   line-height: 1.55;
 }
 .paper-meta em {
-  font-family: 'Lora', Georgia, serif;
-  font-style: italic;       /* now actually italic */
+  /* font-style: italic; */
   font-weight: 700;
   color: #374151;
 }
