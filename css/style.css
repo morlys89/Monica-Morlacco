@@ -489,3 +489,22 @@ text-align: left;
 .sidebar-copy { display: none; }
 .sidebar-contact { margin-top: 1.5rem; grid-column: 1 / -1; }
 }
+
+/* Abstract link in the links row */
+.paper-links .abstract-link { color: #c2185b; }
+.paper-links .abstract-link:hover { color: #7b1040; border-bottom-color: #7b1040; }
+.paper-links .abstract-link[aria-expanded="true"] { color: #7b1040; border-bottom-color: #7b1040; }
+body.dark .paper-links .abstract-link { color: #ec4899; }
+body.dark .paper-links .abstract-link:hover,
+body.dark .paper-links .abstract-link[aria-expanded="true"] { color: #ec4899; border-bottom-color: #ec4899; }
+
+/* Bottom contact: hidden on desktop (contact lives in sidebar), shown on phone */
+.contact-bottom { display: none; }
+.contact-bottom .contact-address { font-size: 0.9rem; color: #4b5563; line-height: 1.75; }
+.contact-bottom a { color: #c2185b; text-decoration: none; }
+body.dark .contact-bottom .contact-address { color: #9ca3af; }
+body.dark .contact-bottom a { color: #ec4899; }
+@media (max-width: 860px) {
+.sidebar .sidebar-contact { display: none; }
+.contact-bottom { display: block; }
+}
