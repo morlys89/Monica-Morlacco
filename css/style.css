@@ -506,16 +506,3 @@ body.dark .paper-links .abstract-link[aria-expanded="true"] { color: #ec4899; bo
 body.dark .contact-bottom .contact-address { color: #9ca3af; }
 body.dark .contact-bottom a { color: #ec4899; }
 
-
-/* Sidebar buttons */
-.sidebar-buttons {
-  margin-top: 1.6rem;
-  display: flex;
-  justify-content: center;
-  gap: 0.7rem;
-  flex-wrap: wrap;
-}
-.sidebar-buttons .cv-button { padding: 0.55rem 1.1rem; }
-@media (max-width: 860px) {
-  .sidebar-buttons { grid-column: 1 / -1; justify-content: flex-start; margin-top: 0.5rem; }
-}
