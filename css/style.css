@@ -282,9 +282,11 @@ body {
 .paper-title-text { font-weight: 600; }
 body.dark .paper-title-text { color: #fafafa; }
 .paper-title .coauthors {
+  display: block;
+  margin-top: 0.15rem;
   font-weight: 400;
   color: #6b7280;
-  font-size: 0.85rem;       /* was 0.88rem */
+  font-size: 0.85rem;
 }
 
 .paper-meta {
