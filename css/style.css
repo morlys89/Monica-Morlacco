@@ -430,52 +430,6 @@ a:focus-visible, .switch input:focus-visible + .slider {
 }
 
 /* =====================================================
-   CV page
-   ===================================================== */
-.cv-buttons {
-  display: flex;
-  gap: 0.8rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
-}
-.cv-button {
-  display: inline-block;
-  padding: 0.6rem 1.2rem;
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--text);
-  background: var(--surface);
-  border: 1px solid var(--text);
-  border-radius: 4px;
-  text-decoration: none;
-  transition: all 0.15s ease;
-}
-.cv-button:hover {
-  background: var(--text);
-  color: var(--bg);
-}
-
-.cv-row {
-  display: grid;
-  grid-template-columns: 96px 1fr;
-  gap: 1.2rem;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: var(--text-2);
-}
-.cv-row + .cv-row { margin-top: 0.6rem; }
-.cv-row em { font-style: italic; color: var(--muted); }
-.cv-year {
-  color: var(--faint);
-  font-size: 0.84rem;
-  font-weight: 500;
-  font-variant-numeric: tabular-nums;
-  padding-top: 0.1rem;
-}
-
-/* =====================================================
    Responsive
    ===================================================== */
 @media (max-width: 860px) {
@@ -508,7 +462,6 @@ a:focus-visible, .switch input:focus-visible + .slider {
   .sidebar-copy { display: none; }
   .dark-toggle { grid-column: 1 / -1; justify-content: flex-start; }
   .section { padding: 1.2rem 1.15rem 1.35rem; }
-  .cv-row { grid-template-columns: 78px 1fr; gap: 0.8rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
