@@ -76,9 +76,11 @@ a:focus-visible, .switch input:focus-visible + .slider, summary:focus-visible {
   gap: 0.3rem 1.5rem;
 }
 .top-name {
-  font-family: var(--display);
-  font-size: 1.2rem;
+  font-family: var(--body);
+  font-size: 0.82rem;
   font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
   text-decoration: none;
   color: var(--text);
 }
@@ -100,10 +102,10 @@ a:focus-visible, .switch input:focus-visible + .slider, summary:focus-visible {
 .hero-photo img { width: 100%; height: auto; display: block; border-radius: 50%; }
 .hero-text { min-width: 0; }
 .hero h1 {
-  font-family: var(--display);
-  font-size: 2.6rem;
-  font-weight: 700;
-  letter-spacing: -0.01em;
+  font-family: var(--body);
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: -0.015em;
   line-height: 1.15;
 }
 .affiliation { margin-top: 0.2rem; color: var(--muted); }
@@ -142,17 +144,14 @@ a:focus-visible, .switch input:focus-visible + .slider, summary:focus-visible {
 /* ---------- Sections ---------- */
 .section { padding: 3rem 0 0.5rem; scroll-margin-top: 3.5rem; }
 .section h2 {
-  display: inline-block;
   font-family: var(--display);
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--accent);
   line-height: 1.3;
-  padding-bottom: 0.3rem;
-  border-bottom: 2px solid var(--accent-line);
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.2rem;
 }
 
 /* ---------- Papers ---------- */
@@ -175,7 +174,7 @@ a:focus-visible, .switch input:focus-visible + .slider, summary:focus-visible {
   color: var(--muted);
 }
 .paper-meta { margin-top: 0.15rem; font-size: 0.92rem; color: var(--muted); }
-.paper-meta em { font-style: normal; font-weight: 600; color: var(--muted); }
+.paper-meta em { font-style: normal; font-weight: 600; color: var(--accent); }
 .paper-status { font-weight: 600; color: var(--muted); }
 
 .paper-links {
@@ -183,27 +182,36 @@ a:focus-visible, .switch input:focus-visible + .slider, summary:focus-visible {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  gap: 0.1rem 0.5rem;
-  font-size: 0.84rem;
+  gap: 0.1rem 0.45rem;
+  font-size: 0.86rem;
 }
-.paper-links .sep { display: none; }
+.paper-links .sep { color: var(--faint); }
 .paper-links a, .media summary {
-  font-weight: 500;
-  color: var(--accent);
-  text-decoration: none;
+  color: var(--faint);
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+  text-underline-offset: 3px;
   cursor: pointer;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
 }
-.paper-links > a::before, .media summary::before { content: "["; }
-.paper-links > a::after, .media summary::after { content: "]"; }
 .paper-links a:hover, .media summary:hover,
 .paper-links .abstract-link[aria-expanded="true"], .media[open] summary {
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  color: var(--accent);
+  text-decoration-color: currentColor;
 }
 
 .media { position: relative; }
 .media summary { list-style: none; }
 .media summary::-webkit-details-marker { display: none; }
+.media summary::after {
+  content: "";
+  display: inline-block;
+  margin-left: 0.3rem;
+  border: 4px solid transparent;
+  border-top-color: currentColor;
+  border-bottom-width: 0;
+  vertical-align: middle;
+}
 .media-menu {
   position: absolute;
   top: calc(100% + 0.3rem);
@@ -218,7 +226,7 @@ a:focus-visible, .switch input:focus-visible + .slider, summary:focus-visible {
   border-radius: 4px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
-.media-menu a { padding: 0.25rem 0.8rem; }
+.media-menu a { padding: 0.25rem 0.8rem; text-decoration: none; }
 
 .paper-abstract { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
 .paper-abstract-inner {
@@ -241,9 +249,10 @@ a:focus-visible, .switch input:focus-visible + .slider, summary:focus-visible {
 
 /* ---------- Discussions ---------- */
 .page-title {
-  font-family: var(--display);
-  font-size: 2.2rem;
-  font-weight: 700;
+  font-family: var(--body);
+  font-size: 2.1rem;
+  font-weight: 400;
+  letter-spacing: -0.015em;
   line-height: 1.2;
   padding-top: 2.6rem;
 }
@@ -294,9 +303,8 @@ a:focus-visible, .switch input:focus-visible + .slider, summary:focus-visible {
   .hero { grid-template-columns: 1fr; gap: 1.4rem; padding: 2rem 0 1.8rem; text-align: center; }
   .hero-photo { max-width: 170px; margin: 0 auto; }
   .hero-text p:not(.affiliation) { text-align: left; }
-  .hero h1 { font-size: 2.1rem; }
+  .hero h1 { font-size: 2rem; }
   .section { padding-top: 2.4rem; }
-  .section h2 { font-size: 1.08rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
