@@ -16,44 +16,24 @@
 </head>
 <body>
 
-<div class="top-bar"></div>
+<header class="top">
+    <div class="top-inner">
+        <a class="top-name" href="/">Monica Morlacco</a>
+        <nav class="top-nav">
+            <a href="/#publications">Publications</a>
+            <a href="/#working-papers">Working Papers</a>
+            <a href="/#teaching">Teaching</a>
+            <a href="/discussions.html" class="active">Discussions</a>
+            <a href="/#contact">Contact</a>
+        </nav>
+    </div>
+</header>
 
-<nav class="top-nav">
-    <a href="/">Home</a>
-    <a href="/#publications">Research</a>
-    <a href="/#contact">Contact</a>
-    <a href="/discussions.html" class="active">Discussions</a>
-</nav>
+<main class="wrap">
 
-<div class="layout">
+    <h1 class="page-title">Selected Conference Discussions</h1>
 
-    <aside class="sidebar">
-        <div class="sidebar-photo"><img src="assets/portrait.webp" width="560" height="560" alt="Monica Morlacco"></div>
-        <div class="sidebar-name"><a href="/">Monica Morlacco</a></div>
-        <div class="sidebar-affiliation">University of Southern California</div>
-        <div class="sidebar-links">
-            <a href="mailto:morlacco@usc.edu">Email</a>
-            <a href="https://www.dropbox.com/scl/fi/trmyshz2128hiqlmbwipo/CV_MorlaccoM.pdf?rlkey=j505e6rzdqe136z518hp7596w&raw=1" target="_blank" rel="noopener noreferrer">CV</a>
-            <a href="https://scholar.google.com/citations?user=z0kVFdkAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-        </div>
-        <div class="sidebar-copy">&copy; 2026</div>
-
-        <div class="dark-toggle">
-            <span>Dark Mode</span>
-            <label class="switch" aria-label="Toggle dark mode">
-                <input type="checkbox" class="dark-toggle-input" onchange="toggleDark(this)">
-                <span class="slider"></span>
-            </label>
-        </div>
-    </aside>
-
-    <main class="content">
-
-        <section class="about">
-            <h1>Selected Conference Discussions</h1>
-        </section>
-
-        <section class="section" style="margin-top: 2rem;">
+    <section class="section discussions">
             <div class="discussion">
                 <div class="disc-title">Tariff Pass-Through and Import Reallocation<span class="disc-authors">by Ahn, J., Rotunno, L., and Ruta, M.</span></div>
                 <div class="disc-meta">FREIT EIIT Conference, Indiana University Bloomington &middot; October 2026 &middot; <a href="https://www.dropbox.com/scl/fi/uo60hq3v1fri47kxvs7i7/discussion_arr.pdf?rlkey=twu85xw4shp2edd28c3kbudef&raw=1" target="_blank" rel="noopener noreferrer">Discussion Slides</a></div>
@@ -88,10 +68,20 @@
                 <div class="disc-title">Price Updating with Production Networks<span class="disc-authors">by Duprez, C. and Magermann, G.</span></div>
                 <div class="disc-meta">EITI, Tokyo &middot; March 2019 &middot; <a href="https://www.dropbox.com/scl/fi/0g1wrqutno650em1pf9wu/Discussion_magerman.pdf?rlkey=2lg8nmze4uu7pkpocd6l55hdd&raw=1" target="_blank" rel="noopener noreferrer">Discussion Slides</a></div>
             </div>
-        </section>
+    </section>
 
-    </main>
-</div>
+</main>
+
+<footer class="foot">
+    <span>&copy; 2026 Monica Morlacco</span>
+    <span class="dark-toggle">
+        <span>Dark Mode</span>
+        <label class="switch" aria-label="Toggle dark mode">
+            <input type="checkbox" class="dark-toggle-input" onchange="toggleDark(this)">
+            <span class="slider"></span>
+        </label>
+    </span>
+</footer>
 
 <script>
 function toggleDark(input) {
